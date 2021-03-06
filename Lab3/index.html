@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Potato Head Page</title>
+
+<style>
+
+h1
+{
+	color: Red;
+  	padding: 10px;
+  	left: 200px;
+  	border: 5px solid gray;
+}
+
+h2
+{
+	left: 200px;
+}
+
+.container {
+    position: relative;
+    clear: none;
+    float: center;
+}
+
+.faceoverlap
+{
+	position: absolute;
+	float:center;
+	top: 200px;
+	border: 5px solid gray;
+}
+
+.ccButtons
+{
+	position: absolute;
+	text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>Potato Man </h1>
+<h2>Click the buttons below to create a Potato Man and have fun as I giggle!</h2>
+
+<!-- <img id="face" class="faceoverlap" src="images/body.png" style="width:400px"> -->
+<!-- <img id="brow" class="browoverlap" src="images/brow1.png" style="width:400px"> -->
+<img id="face" class="faceoverlap" src="images/body.png" style="width:800px"> 
+<img id="eye" class="faceoverlap" src="images/eye1.png" style="width:800px">
+<img id="brow" class="faceoverlap" src="images/brow1.png" style="width:800px">
+<img id="nose" class="faceoverlap" src="images/nose2.png" style="width:800px">
+<img id="ear" class="faceoverlap" src="images/ear1.png" style="width:800px">
+<img id="mouth" class="faceoverlap" src="images/mouth1.png" style="width:800px">
+<img id="moustache" class="faceoverlap" src="images/moustache1.png" style="width:800px">
+
+
+<div class="ccButtons">
+<button onclick=EyeButton()>Eyes</button>
+<button onclick=BrowButton()>Eye Brows</button>
+<button onclick=NoseButton()>Nose</button>
+<button onclick=EarButton()>Ears</button>
+<button onclick=MouthButton()>Mouth</button>
+<button onclick=MoustacheButton()>Moustache</button>
+</div>
+</div>
+
+<script>
+
+var buzzerSound = new Audio("sfx/giggle.mp3");
+
+function EyeButton()
+{
+	buzzerSound.play();
+	var image = document.getElementById("eye");
+	if (image.src.match("eye1")) {
+		image.src = "images/eye2.png";
+	} else {
+		image.src = "images/eye1.png";
+	}
+}
+
+function BrowButton()
+{
+	buzzerSound.play();
+	var image = document.getElementById("brow");
+	if (image.src.match("brow1")) {
+		image.src = "images/brow2.png";
+	} else {
+		image.src = "images/brow1.png";
+	}
+}
+
+function NoseButton()
+{
+	buzzerSound.play();
+	var image = document.getElementById("nose");
+	if (image.src.match("nose1")) {
+		image.src = "images/nose2.png";
+	} else {
+		image.src = "images/nose1.png";
+	}
+}
+
+function EarButton()
+{
+	buzzerSound.play();
+	var image = document.getElementById("ear");
+	if (image.src.match("ear1")) {
+		image.src = "images/ear2.png";
+	} else {
+		image.src = "images/ear1.png";
+	}
+}
+
+function MouthButton()
+{
+	buzzerSound.play();
+	var image = document.getElementById("mouth");
+	if (image.src.match("mouth1")) {
+		image.src = "images/mouth2.png";
+	} else {
+		image.src = "images/mouth1.png";
+	}
+}
+
+function MoustacheButton()
+{
+	buzzerSound.play();
+	var image = document.getElementById("moustache");
+	if (image.src.match("moustache1")) {
+		image.src = "images/moustache2.png";
+	} else {
+		image.src = "images/moustache1.png";
+	}
+}
+
+</script>
+
+
+</body>
+</html>
