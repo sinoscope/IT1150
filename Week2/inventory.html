@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> 
 <head>
+    <meta charset="utf-8" />
 <style>
 
 .button {
@@ -32,6 +33,22 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 4px 4px;
+}
+
+.width50perc {
+    width: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div1 {
@@ -118,7 +135,11 @@ th {
 }
 
 </style>
+    <title>
+        Inventory
+    </title>
 </head>
+
 <body>
 
 <ul>
@@ -133,76 +154,83 @@ th {
 
 <div class="text-block">
     <h2>Don’t Stop Me Now!</h2>
-    <center><img src="Nike2.jpeg" alt="Model 1" width="50%"></center>
+    <img class ="center" src="Nike2.jpeg" alt="Model 1">
 
     <h3>Our best-seller! Step into your softest run ever. With plenty of super soft cushioning underfoot, the Don’t Stop Me Now! delivers premium comfort mile after mile.</h3>
     <h3>Price: $80</h3>
-    <center><button class="button">Add to cart</button><center>
+</div>
+
+<div style="text-align:center;">
+    <button class="button">Add to cart</button>
 </div>
 
 
 <div class="text-block">
     <h2>Catch Me If You Can!</h2>
-    <center><img src="Pink2.jpeg" alt="Model 2" width="50%"></center>
+    <img class ="center" src="Pink2.jpeg" alt="Model 2">
 
     <h3>Looking for lightweight speed? With new, lighter cushioning, the Catch Me If You Can! offers a fast, fun ride without sacrificing softness or durability.</h3>
     <h3>Price: $100</h3>
-    <center><button class="button">Add to cart</button><center>
 </div>
-
+<div style="text-align:center;">
+    <button class="button">Add to cart</button>
+</div>
 
 <div class="text-block">
     <h2>Stop Chasing Me!</h2>
-    <center><img src="Reebok2.jpeg" alt="Model 2" width="50%"></center>
+    <img class ="center" src="Reebok2.jpeg" alt="Model 2">
 
     <h3>Looking for a smoother way to run? The Stop Chasing Me! offers super smooth transitions plus soft cushioning so your run is the only thing on your mind.</h3>
     <h3>Price: $120</h3>
-    <center><button class="button">Add to cart</button><center>
 </div>
-<h1>Model Comparison</h1>
-<center><table>
-  <tr>
-    <th></th>
-    <th>Support</th>
-    <th>Midsole Drop</th>
-    <th>Weight</th>
-    <th>Arch</th>
-    <th>Experience Type</th>
-    <th>Use</th>
-    <th>Price</th>
+<div style="text-align: center;">
+    <button class="button">Add to cart</button>
+</div>
 
-  </tr>
-  <tr>
-    <th>Don’t Stop Me Now!</th>
-    <td>Neutral</td>
-    <td>10mm</td>
-    <td>10.2 oz / 289.2 g</td>
-    <td>High</td>
-    <td>Cushion</td>
-    <td>Road Running</td>
-    <td>$80</td>
-  </tr>
-  <tr>
-    <th>Catch Me If You Can!</th>
-    <td>Neutral</td>
-    <td>10mm</td>
-    <td>7.9 oz / 224.0g</td>
-    <td>Medium</td>
-    <td>Speed</td>
-    <td>Track Running</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <th>Stop Chasing Me!</th>
-    <td>Neutral</td>
-    <td>12mm</td>
-    <td>8.8 oz / 249.5 g</td>
-    <td>Medium/High</td>
-    <td>Cushion</td>
-    <td>Road Running</td>
-    <td>$120</td>
-  </tr>
-</table><center>
-<p>Image resource:https://creativecommons.org/</p>
+<h1>Model Comparison</h1>
+    <table class="center">
+        <tr>
+            <th></th>
+            <th>Support</th>
+            <th>Midsole Drop</th>
+            <th>Weight</th>
+            <th>Arch</th>
+            <th>Experience Type</th>
+            <th>Use</th>
+            <th>Price</th>
+
+        </tr>
+        <tr>
+            <th>Don’t Stop Me Now!</th>
+            <td>Neutral</td>
+            <td>10mm</td>
+            <td>10.2 oz / 289.2 g</td>
+            <td>High</td>
+            <td>Cushion</td>
+            <td>Road Running</td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <th>Catch Me If You Can!</th>
+            <td>Neutral</td>
+            <td>10mm</td>
+            <td>7.9 oz / 224.0g</td>
+            <td>Medium</td>
+            <td>Speed</td>
+            <td>Track Running</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <th>Stop Chasing Me!</th>
+            <td>Neutral</td>
+            <td>12mm</td>
+            <td>8.8 oz / 249.5 g</td>
+            <td>Medium/High</td>
+            <td>Cushion</td>
+            <td>Road Running</td>
+            <td>$120</td>
+        </tr>
+    </table>
+    <p>Image resource:https://creativecommons.org/</p>
 </body>
 </html>
