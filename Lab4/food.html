@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Food
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #252525;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #e7298a;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            text-decoration: none;
+        }
+
+            .menu li:hover {
+                background-color: #252525;
+            }
+            .menu li a {
+                display: block;
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+        .aside {
+            background-color: #e7298a;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer {
+            background-color: #f7f7f7;
+            color: #252525;
+            text-align: center;
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: 0 auto 25px;
+        }
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+            /* On hover, add a grey background color */
+            .prev:hover, .next:hover {
+                background-color: #f1f1f1;
+                color: black;
+            }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+        .image {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Moabit</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transport.html">Transportation</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>Food in Moabit</h1>
+            <p>Food is very eclectic in Moabit, thanks to the big immigrant population. You can find almost all cuisines. For some unique experiences:</p>
+            <h2>Gullu Lahmacun</h2>
+            <h4>Address: Perleberger Str. 56 10559 Berlin Phone: +49 176 31562789 </h4>
+            <h5>Hours: Mo-Fr 12-8PM Sat-Su 12-7PM</h5>
+            <p>
+                Güllü Lahmacun serves some of the freshest Turkish food in town. Once you have tried their Manti (little meat dumplings served with garlic yogurt and butter sauce) you’ll be coming back for more. A true Moabit hidden gem waiting to be discovered by you.
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides1 fade">
+                    <img src="gullu1.jpg" style="width:100%">
+                    <div class="image">Gullu prepares everything from scretch.</div>
+                </div>
+                <div class="mySlides1 fade">
+                    <img src="gullu2.jpg" style="width:100%">
+                    <div class="image">Gozleme with spinach and feta is a must-try!</div>
+                </div>
+                <div class="mySlides1 fade">
+                    <img src="gullu3.jpg" style="width:100%">
+                    <div class="image">Lahmacun (Turkish pizza) is Gullu's speciality.</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a> <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,0)"></span> <span class="dot" onclick="currentSlide(2,0)"></span> <span class="dot" onclick="currentSlide(3,0)"></span> </div>
+            </div>
+            <p>
+                Güllü Lahmacun is cash only. Price range: $10-20 per person. No reservation required.
+            </p>
+            <h2>Ergün's Fischbude (Balikci Ergun)</h2>
+            <h4>Address: Lueneburger Str. 382, 10557 Berlin Phone: +49 30 3975737</h4>
+            <h5>Hours: Mo-Su: 3:30PM-12AM</h5>
+            <p>
+                This fish restaurant is so tiny that it fits under one arch of the S-Bahn rails and is so authentic at the same time that you might think you stepped into a small harbour restaurant in Istanbul. Here you can order fish, fish and fish. And drink raki!
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides2 fade">
+                    <img src="ergun1.jpg" style="width:100%">
+                    <div class="image">Customers leave notes everywhere in this restaurant. Poems, love confessions, quotes, everything you may or may not imagine.</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="ergun2.jpg" style="width:100%">
+                    <div class="image">Fish comes fresh from Mediterranean Sea every day and served after grilled to perfection.</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="ergun3.jpg" style="width:100%">
+                    <div class="image">Restaurant has a unique location with trains passing right above your head.</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a> <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,1)"></span> <span class="dot" onclick="currentSlide(2,1)"></span> <span class="dot" onclick="currentSlide(3,1)"></span> </div>
+            </div>
+            <p>
+                Ergün's Fischbude is cash only. Price range: $30-40 per person. Reservation is recommended.
+            </p>
+            <h2>Restaurant Agni</h2>
+            <h4>Address: Kaiserin-Augusta-Allee 1 10553 Berlin Phone: +49 176 49220550</h4>
+            <h5>Hours: Mo-Fr: 11AM-3PM, 6-10PM, Sat: 6-10PM, Su: Closed</h5>
+            <p>
+                This restaurant serves authentic Indian food from vegetarian or vegan to meat like lamb, beef and chicken. It is so small and cozy that you will feel like you are eating in your grandma's kitchen. The food is absolutely delicious.
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides3 fade">
+                    <img src="agni1.jpg" style="width:100%">
+                    <div class="image">Agni's signature dish is tandoori chicken served with fresh salad.</div>
+                </div>
+                <div class="mySlides3 fade">
+                    <img src="agni2.jpg" style="width:100%">
+                    <div class="image">Not the greatest curb appeal! :) </div>
+                </div>
+                <div class="mySlides3 fade">
+                    <img src="agni3.jpg" style="width:100%">
+                    <div class="image">Sizzling, yummy tandoori! </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a> <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,2)"></span> <span class="dot" onclick="currentSlide(2,2)"></span> <span class="dot" onclick="currentSlide(3,2)"></span> </div>
+            </div>
+            <p>
+                Agni is cash only. Price range: $15-25 per person. No reservation required.
+            </p>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h2>Dining Etiquette</h2>
+                <h3>Finding a Seat</h3>
+                <p>Do not wait to be seated. It could be a long wait. Diners are expected to find their own table.</p>
+                <h2>Water</h2>
+                <p>
+                    Water needs to be requested. Bottled water is almost always sparkling (Mineralwasser).
+                    If you don’t want the fizzy stuff, ask for “stilles Wasser”.
+                    For tap water, which is always clean and free, just say “Leitungswasser bitte”.
+                </p>
+                <h2>Paying the Bill & Tipping</h2>
+                <p>You have to ask for your bill by saying: “Zahlen bitte!” Paying is always done at the table. A normal tip is 5-10%. Credit cards are uncommon, so have some cash!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Call us now <a href="tel:004915250000000">+49 XXXX XX XXXX</a></p>
+        <a href="mailto:moabit@gmail.com">Email us!</a>
+    </div>
+
+    <script>
+        var slideIndex = [1, 1, 1, 1, 1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+        function currentSlide(n, no) {
+            showSlides(slideIndex[no] = n, no);
+        }
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+
+</body>
+</html>

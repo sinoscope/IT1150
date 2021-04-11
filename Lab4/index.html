@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Home
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #252525;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #e7298a;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            text-decoration:none;
+        }
+
+            .menu li:hover {
+                background-color: #252525;
+            }
+        .menu li a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .aside {
+            background-color: #e7298a;
+            padding: 15px;
+            color: #252525;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer {
+            background-color: #f7f7f7;
+            color: #252525;
+            text-align: center;
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Moabit</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transport.html">Transportation</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+            </ul>
+        </div>
+
+        <section class="col-6 col-s-9">
+            <h1>Underexplored Territories: Moabit in Berlin</h1>
+            <p>
+                Moabit is an inner city located in the borough of Mitte, Berlin, Germany. First inhabited in 1685 and incorporated into Berlin in 1861, the former industrial and working-class neighbourhood is fully surrounded by three watercourses -all branches of Spree- which define its present-day border. Between 1945 and 1990, Moabit was part of the British sector of West Berlin that directly bordered East Berlin.
+
+                Colloquially, the name Moabit also refers to the Central Criminal Court (Strafgericht) and detention centre, which deals with all criminal cases in Berlin and is based in Moabit.
+            </p>
+            <picture>
+                <source srcset="CoverImage_small.jpeg" media="(max-width: 400px)">
+                <source srcset="CoverImage.jpeg">
+                <img src="CoverImage.jpeg" alt="Flowers" style="width:auto;">
+            </picture>
+
+            <h2>History of Berlin</h2>
+            <p>Moabit was part of the British sector of West Berlin after the World War II, between 1945 and 1990. Due to its new peripheral location adjacent to the Berlin Wall, Moabit became a remote neighbourhood. Similar to Kreuzberg, it attracted mostly immigrants due to its low rents. With the fall of the Berlin Wall, Moabit's location has anew changed to its former centrality. Post-reunification, Moabit has faced problems such as drug trafficking and abuse (especially around Kleiner Tiergarten), poverty (most notably in its Western parts), and crime. Similar to neighbouring Wedding, lower rents have recently attracted artists and young people.</p>
+
+            <h2>Population of Berlin</h2>
+            <p>Around 81,000 people live in Moabit. According to 2019 census, 47.8% of the population is female. 73.1% of the people are between 18 and 64 years with 12.4% above 65. Moabit is very diverse with 32.1% of the population holding a non-German nationality.</p>
+
+        </section>
+
+
+        <section class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Where?</h2>
+                <p>Moabit is a town in the city of Berlin right where East and West Berlin meets.</p>
+                <h2>Why?</h2>
+                <p>Moabit is a melting pot of history, culture, and nature with no tourist crowds.</p>
+                <h2>How to travel?</h2>
+                <p>You can reach Berlin airport from all over the world.</p>
+            </div>
+        </section>
+    </div>
+
+    <section class="footer">
+        <p>Call us now <a href="tel:004915250000000">+49 XXXX XX XXXX</a></p>
+        <a href="mailto:moabit@gmail.com">Email us!</a>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Lodging
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #252525;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #e7298a;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            text-decoration: none;
+        }
+
+            .menu li:hover {
+                background-color: #252525;
+            }
+            .menu li a {
+                display: block;
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+        .aside {
+            background-color: #e7298a;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer {
+            background-color: #f7f7f7;
+            color: #252525;
+            text-align: center;
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: 0 auto 25px;
+        }
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+            /* On hover, add a grey background color */
+            .prev:hover, .next:hover {
+                background-color: #f1f1f1;
+                color: black;
+            }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+        .image {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Moabit</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="transport.html">Transportation</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>Lodging in Moabit</h1>
+            <p>Moabit offers many options when it comes to where to stay. If you are a back-packer, there are many B&B places where you can mingle with other tourists and locals. If you are looking for something more private, you can find that in Moabit, too. Here are some lodging options:</p>
+            <h2>Ibis Berlin Hauptbahnhof</h2>
+            <h4>Address: Invalidenstraße 53, 10557 Berlin Phone: +49 30 7109600 </h4>
+            <p>
+                Offering hotel accommodations with free WiFi access in all areas, Ibis Berlin Hauptbahnhof is centrally located in Berlin. It is just 1,000 feet from Berlin Central Station. Each room at Ibis Berlin Hauptbahnhof comes complete with air conditioning, a desk and a flat-screen TV featuring satellite channels. All rooms also have a private bathroom providing a shower and a hairdryer.
+                Guests can enjoy a drink or a snack in the hotel's in-house bar and a snack bar. Additionally, various restaurants and eateries can be found within walking distance.
+                Many popular attractions such as the Brandenburg Gate (1.2 mi), the Reichstag parliament building (0.9 mi) and the Natural History Museum (2,450 feet) are located close by. Berlin Tegel Airport is 4.7 mi away.
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides1 fade">
+                    <img src="ibis1.jpg" style="width:100%">
+                    <div class="image">Building</div>
+                </div>
+                <div class="mySlides1 fade">
+                    <img src="ibis2.jpg" style="width:100%">
+                    <div class="image">Rooms</div>
+                </div>
+                <div class="mySlides1 fade">
+                    <img src="ibis3.jpg" style="width:100%">
+                    <div class="image">Bar</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a> <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,0)"></span> <span class="dot" onclick="currentSlide(2,0)"></span> <span class="dot" onclick="currentSlide(3,0)"></span> </div>
+            </div>
+
+            <h2>Amstel House Hostel</h2>
+            <h4>Address: Waldenserstr. 31, 10551 Berlin Phone: +49 30 3954072</h4>
+            <p>
+                The Amstel House Hostel Berlin is a budget hostel, placed in Moabit, the newest Berlin hotspot in the district of Mitte, our central location is surrounded by many of Berlin’s main sightseeing and tourist attractions. Our unique area is experiencing an artistic boom, attracting many students, artists, galleries and cultural venues. Our reception is open 24h/7 as well as our bar. Our centenary historical heritage building in art nouveau style was totally renovated and provides modern accommodation and a great range of service such as breakfast buffet, bike rent, game room, fully equipped guest kitchen, free Wifi access and much more. We also have a big variety of inexpensive room types and bed offers such as private single and twin ensuite rooms, 4-bedrooms and dormitories. Female dorms, family rooms, weekend specials, Berlin-Marathon and New Year’s packages are also part of our offers.
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides2 fade">
+                    <img src="amstel1.jpg" style="width:100%">
+                    <div class="image">Building</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="amstel2.jpg" style="width:100%">
+                    <div class="image">Rooms</div>
+                </div>
+                <div class="mySlides2 fade">
+                    <img src="amstel3.jpg" style="width:100%">
+                    <div class="image">Dining Hall</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a> <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,1)"></span> <span class="dot" onclick="currentSlide(2,1)"></span> <span class="dot" onclick="currentSlide(3,1)"></span> </div>
+            </div>
+            <h2>Meininger Hotel Berlin Tiergarten</h2>
+            <h4>Address:  25 Turmstraße, Mitte, 10559 Berlin Phone: +49 30 31879434</h4>
+            <p>
+                Located in Berlin, in the new Schultheiss-Quartier in Moabit (Shopping Mall) and next to Tiergarten park, 1.5 mi from Natural History Museum, MEININGER Hotel Berlin Tiergarten offers a shared lounge and a 24-hour front desk for guests. It is located 1.6 mi from Brandenburg Gate and 1.7 mi away from Potsdamer Platz.
+                All rooms in the hotel are fitted with a flat-screen TV. Featuring a private bathroom with a shower and free toiletries, rooms at MEININGER Hotel Berlin Tiergarten also have free WiFi, while selected rooms also feature a city view. Guest rooms include a desk.
+                Guests at the accommodations can enjoy a continental breakfast. The parking is available in the nearby Schultheiss-Quartier.
+                Theater and Comedy at Kurfuerstendamm is 1.9 mi from MEININGER Hotel Berlin Tiergarten, while Kurfürstendamm is 1.9 mi away. Berlin Brandenburg Airport is 19 mi from the property.
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides3 fade">
+                    <img src="meininger1.jpg" style="width:100%">
+                    <div class="image">Building</div>
+                </div>
+                <div class="mySlides3 fade">
+                    <img src="meininger2.jpg" style="width:100%">
+                    <div class="image">Rooms</div>
+                </div>
+                <div class="mySlides3 fade">
+                    <img src="meininger3.jpg" style="width:100%">
+                    <div class="image">Lobby</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a> <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,2)"></span> <span class="dot" onclick="currentSlide(2,2)"></span> <span class="dot" onclick="currentSlide(3,2)"></span> </div>
+            </div>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h2>Accomodation Budget</h2>
+                <h3>Backpacker</h3>
+                <p>Expect to spend $30-40/night.</p>
+                <h2>Mid-Range</h2>
+                <p>Expect to spend $70-100/night.</p>
+                <h2>Luxury</h2>
+                <p>Expect to spend min $100/night.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Call us now <a href="tel:004915250000000">+49 XXXX XX XXXX</a></p>
+        <a href="mailto:moabit@gmail.com">Email us!</a>
+    </div>
+
+    <script>
+        var slideIndex = [1, 1, 1, 1, 1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+        function currentSlide(n, no) {
+            showSlides(slideIndex[no] = n, no);
+        }
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+
+
+</body>
+</html>
