@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        Home
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mycss.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#greenbutton").click(function () {
+                $("#div1").show();
+                $("#div2").hide();
+                $("#div3").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#bluebutton").click(function () {
+                $("#div1").hide();
+                $("#div2").show();
+                $("#div3").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#redbutton").click(function () {
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div3").show();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <section class="col-8 col-s-8">
+        <h1>Important Internet Organizations</h1>
+        <p>Click on the organization name below to learn more about it!</p>
+        <button id="greenbutton" class="button button1">The Internet Engineering Task Force (IETF)</button>
+        <div id="div1" class="hidden">
+            <picture>
+                <img src="images/ietf_logo.png" alt="ietf_logo">
+            </picture>
+            <p>The IETF is a large open international community of network designers, operators, vendors, and researchers concerned with the evolution of the Internet architecture and the smooth operation of the Internet. IETF’s mission is to make the Internet work better by producing high quality, relevant technical documents that influence the way people design, use, and manage the Internet. IETF has five major principles:</p>
+            <ol>
+                <li>Open process</li>
+                <li>Technical competence</li>
+                <li>Volunteer core</li>
+                <li>Rough consensus and running code</li>
+                <li>Protocol ownership</li>
+            </ol>
+            <a href="https://www.ietf.org/">IETF Website</a>
+            <p>One of the issues IETS is interested in is “The Internet of Things (IoT)”, which is the network of physical objects or things that can connect to internet. These objects are embedded with electronics that enable them to exchange data with the manufacturer, operator or other connected objects. Several working groups within the IETF are developing protocols for IoT.</p>
+            <a href="https://trac.ietf.org/trac/int/wiki/IOTDirWiki">Click to learn more about IoT</a>
+        </div><br>
+
+        <button id="bluebutton" class="button button2">Internet Corporation for Assigned Names and Numbers (ICANN)</button>
+        <div id="div2" class="hidden">
+            <picture>
+                <img src="images/ICANN_logo.png" alt="ICANN_logo">
+            </picture>
+            <p>ICANN is a not-for-profit public-benefit corporation with participants from all over the world dedicated to keeping the Internet secure, stable and interoperable. It promotes competition and develops policy on the Internet's unique identifiers. Through its coordination role of the Internet's naming system, it does have an important impact on the expansion and evolution of the Internet. ICANN’s “multistakeholder policy making” resembles the structure of the Internet itself: borderless and open to all. ICANN plays a unique role in the infrastructure of the internet. Through its contracts with registries (such as dot-com or dot-info) and registrars (companies that sell domain names to individuals and organizations), we help define how the domain name system functions and expands.</p>
+            <a href="https://www.icann.org/">ICANN Website</a>
+            <p>ICANN deals with various disputes about domain names and content of websites. These issues include but are not limited to domain name transfer disputes, unsolicited renewal or transfer solicitation, unauthorized transfer of domainnName, and trademark infringement. </p>
+            <a href="https://www.icann.org/resources/pages/dispute-resolution-2012-02-25-en">Click to learn more about the issues tackled by ICANN</a>
+        </div><br>
+
+        <button id="redbutton" class="button button3">World Wide Web Consortium (W3C)</button>
+        <div id="div3" class="hidden">
+            <picture>
+                <img src="images/w3c_logo.jpg" alt="W3C_logo">
+            </picture>
+            <p>The World Wide Web Consortium (W3C) is an international community working with the aim to develop Web standards. W3C consists of more than 400 member organizations, a full-time staff, and the public. W3C is led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe.</p>
+            <a href="https://www.w3.org/">W3C Website</a>
+            <p>
+                One of the missions of W3C is Web for All. With this mission, W3C emphasizes the social value of the Web as it enables human communication, commerce, and opportunities to share knowledge. One of W3C's primary goals is to make these benefits available to all people, whatever their hardware, software, network infrastructure, native language, culture, geographical location, or physical or mental ability. Web for All develops strategies, standards, and supporting resources to help developers make the Web more accessible for people with disabilities.
+            </p>
+            <a href="https://www.w3.org/WAI/">Click to learn more about W3C’s Web Accessibility Initiative</a>
+        </div><br>
+    </section>
+
+</body>
+</html>
