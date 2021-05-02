@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IT1150 Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mycss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#div1").show();
+                $("#div2").hide();
+                $("#div3").hide();
+                $("#div4").hide();
+                $("#div5").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#button2").click(function () {
+                $("#div1").hide();
+                $("#div2").show();
+                $("#div3").hide();
+                $("#div4").hide();
+                $("#div5").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#button3").click(function () {
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div3").show();
+                $("#div4").hide();
+                $("#div5").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#button4").click(function () {
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div3").hide();
+                $("#div4").show();
+                $("#div5").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#button5").click(function () {
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div3").hide();
+                $("#div4").hide();
+                $("#div5").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section class="col-8 col-s-8">
+        <img src="images/therapy.png" alt="physical therapy" style="width:128px;height:128px;">
+        <h1>Sinem B.B</h1>
+        <p>
+            In Spring 2021, I took the course IT1150 Web Programming from Tri-C with the aim to gain a foundational understanding of web programming. During the course, I designed very interesting and fun websites
+            each of which taught very useful concepts in HTML/CSS/Javascript that I will be using in my web programming projects in the future. Learning web programming will certainly be a life-long journey but I have the feeling that
+            I had made a good start. I truly loved this course and enjoyed the material I learned. Here is a list of the websites I produced during this course:
+        </p>
+
+        <h2>My IT1150 Portfolio</h2>
+        <p>Click on the project name below to learn more about it!</p>
+
+        <button id="button1" class="button">Project 1: My first personal website</button>
+        <div id="div1" class="hidden">
+            <p>
+                This project was the starting point of the course. For the first time, I produced a website that is accessible via internet using a plain text file and an image I found from the internet to describe my interest in neuro-rehabilitation.
+                Looking back, I realize how awful it looked and how much I have learned since then!
+            </p>
+
+            <a href="https://sinoscope.github.io/IT1150/Introduction/">Click to see my Project 1: Personal Webpage</a>
+        </div><br>
+
+        <button id="button2" class="button">Project 2: Online Shoppe</button>
+        <div id="div2" class="hidden">
+            <p>In this project, I designed an online sneaker shop. I had 3 sneaker models with pictures, features, and comparison table. I also had a order page. This was the first time I learned making websites with multiple pages with references to each other. I also used CSS for the first time to integrate design elements to my website such as colors, font styles, etc. It was a very fun project.</p>
+            <a href="https://sinoscope.github.io/IT1150/Week2/">Click to see my Project 2: Online Shoppe</a>
+        </div><br>
+
+        <button id="button3" class="button">Project 3: The Face Maker</button>
+        <div id="div3" class="hidden">
+            <p>In this project, I made a Potato Man with customizable face features, which are grouped in categories. For example, there is a category "Eyes" from which the user can choose a pair of eyes for the Potato Man. Whenever the user makes a choice, we hear the Potato Man giggling at us. In my opinion, this was the most creative and entertaining project of the course.</p>
+            <a href="https://sinoscope.github.io/IT1150/Lab3/">Click to see my Project 3: The Face Maker</a>
+        </div><br>
+
+        <button id="button4" class="button">Project 4: The City Project</button>
+        <div id="div4" class="hidden">
+            <p>In this project, I designed a tourism information website for a district called Moabit in Berlin. My website used Responsive Design techniques (for the first time!) so the pages looked good on both a computer browser and a cell phone screen. This was the most time-consuming project of the course (therefore we had double credit) but the end result was very rewarding. I was happy to receive great feedback from our instructor, Prof. Ostroske.</p>
+            <a href="https://sinoscope.github.io/IT1150/Lab4/">Click to see my Project 4: The City Project</a>
+        </div><br>
+
+        <button id="button5" class="button">Project 5: Internet Organizations</button>
+        <div id="div5" class="hidden">
+            <p>In this project, I designed a website to describe three important internet organizations: The Internet Engineering Task Force (IETF), Internet Corporation for Assigned Names and Numbers (ICANN), and World Wide Web Consortium (W3C). The aim was to understand their functions and explain a specific mission they are involved in. This was the project I learned how to use JQuery.</p>
+            <a href="https://sinoscope.github.io/IT1150/Lab5/">Click to see my Project 5: Important Internet Organizations</a>
+        </div><br>
+
+    </section>
+</body>
+</html>
